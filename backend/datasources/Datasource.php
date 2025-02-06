@@ -1,6 +1,6 @@
 <?php
 
-namespace mbolli\nfsen_ng\datasources;
+namespace arcxonline\nfsen_ng\datasources;
 
 interface Datasource {
     /**
