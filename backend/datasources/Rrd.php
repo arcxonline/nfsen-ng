@@ -1,10 +1,10 @@
 <?php
 
-namespace mbolli\nfsen_ng\datasources;
+namespace arcxonline\nfsen_ng\datasources;
 
 use JetBrains\PhpStorm\ExpectedValues;
-use mbolli\nfsen_ng\common\Config;
-use mbolli\nfsen_ng\common\Debug;
+use arcxonline\nfsen_ng\common\Config;
+use arcxonline\nfsen_ng\common\Debug;
 
 class Rrd implements Datasource {
     private readonly Debug $d;
