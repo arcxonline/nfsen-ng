@@ -1,9 +1,9 @@
 <?php
 
-namespace mbolli\nfsen_ng\processor;
+namespace arcxonline\nfsen_ng\processor;
 
-use mbolli\nfsen_ng\common\Config;
-use mbolli\nfsen_ng\common\Debug;
+use arcxonline\nfsen_ng\common\Config;
+use arcxonline\nfsen_ng\common\Debug;
 
 class Nfdump implements Processor {
     private array $cfg = [
