@@ -1,5 +1,5 @@
 {
-    "name": "mbolli/nfsen-ng",
+    "name": "arcxonline/nfsen-ng",
     "description": "Responsive NetFlow visualizer built on top of nfdump tools",
     "license": "Apache-2.0",
     "minimum-stability": "dev",
