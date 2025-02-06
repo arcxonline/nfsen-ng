@@ -1,9 +1,9 @@
 <?php
 
-namespace mbolli\nfsen_ng\common;
+namespace arcxonline\nfsen_ng\common;
 
-use mbolli\nfsen_ng\datasources\Datasource;
-use mbolli\nfsen_ng\processor\Processor;
+use arcxonline\nfsen_ng\datasources\Datasource;
+use arcxonline\nfsen_ng\processor\Processor;
 
 abstract class Config {
     public const VERSION = 'v0.3';
@@ -42,7 +42,7 @@ abstract class Config {
         self::$initialized = true;
 
         // find data source
-        $dbClass = 'mbolli\\nfsen_ng\\datasources\\' . ucfirst(mb_strtolower(self::$cfg['general']['db']));
+        $dbClass = 'arcxonline\\nfsen_ng\\datasources\\' . ucfirst(mb_strtolower(self::$cfg['general']['db']));
         if (class_exists($dbClass)) {
             self::$db = new $dbClass();
         } else {
@@ -51,7 +51,7 @@ abstract class Config {
 
         // find processor
         $processorClass = \array_key_exists('processor', self::$cfg['general']) ? ucfirst(mb_strtolower(self::$cfg['general']['processor'])) : 'Nfdump';
-        $processorClass = 'mbolli\\nfsen_ng\\processor\\' . $processorClass;
+        $processorClass = 'arcxonline\\nfsen_ng\\processor\\' . $processorClass;
         if (!class_exists($processorClass)) {
             throw new \Exception('Failed loading class ' . $processorClass . '. The class doesn\'t exist.');
         }
