@@ -2,9 +2,9 @@
 <?php
 include_once implode(\DIRECTORY_SEPARATOR, [__DIR__, '..', 'vendor', 'autoload.php']);
 
-use mbolli\nfsen_ng\common\Config;
-use mbolli\nfsen_ng\common\Debug;
-use mbolli\nfsen_ng\common\Import;
+use arcxonline\nfsen_ng\common\Config;
+use arcxonline\nfsen_ng\common\Debug;
+use arcxonline\nfsen_ng\common\Import;
 
 $d = Debug::getInstance();
 try {
