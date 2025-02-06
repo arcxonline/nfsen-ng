@@ -1,8 +1,8 @@
 <?php
 
-namespace mbolli\nfsen_ng\common;
+namespace arcxonline\nfsen_ng\common;
 
-use mbolli\nfsen_ng\processor\Nfdump;
+use arcxonline\nfsen_ng\processor\Nfdump;
 
 class Import {
     private readonly Debug $d;
@@ -69,7 +69,7 @@ class Import {
                     $this->d->log('Last update: ' . $lastUpdate->format('Y-m-d H:i'), \LOG_INFO);
                 }
                 if ($this->cli === true && $this->quiet === false) {
-                    \mbolli\nfsen_ng\vendor\ProgressBar::setTotal($daysTotal);
+                    \arcxonline\nfsen_ng\vendor\ProgressBar::setTotal($daysTotal);
                 }
 
                 // set progress to the date when the import was stopped
@@ -89,7 +89,7 @@ class Import {
                 if (!file_exists($scanPath)) {
                     $this->d->dpr($scanPath . ' does not exist!');
                     if ($this->cli === true && $this->quiet === false) {
-                        echo \mbolli\nfsen_ng\vendor\ProgressBar::next(1);
+                        echo \arcxonline\nfsen_ng\vendor\ProgressBar::next(1);
                     }
                     continue;
                 }
@@ -99,7 +99,7 @@ class Import {
                 $scanFiles = scandir($scanPath);
 
                 if ($this->cli === true && $this->quiet === false) {
-                    echo \mbolli\nfsen_ng\vendor\ProgressBar::next(1, 'Scanning ' . $scanPath . '...');
+                    echo \arcxonline\nfsen_ng\vendor\ProgressBar::next(1, 'Scanning ' . $scanPath . '...');
                 }
 
                 foreach ($scanFiles as $file) {
@@ -151,7 +151,7 @@ class Import {
             $this->d->log('Import did not process any sources.', \LOG_WARNING);
         }
         if ($this->cli === true && $this->quiet === false) {
-            echo \mbolli\nfsen_ng\vendor\ProgressBar::finish();
+            echo \arcxonline\nfsen_ng\vendor\ProgressBar::finish();
         }
     }
 
