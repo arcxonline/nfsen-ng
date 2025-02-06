@@ -1,6 +1,6 @@
 <?php
 
-namespace mbolli\nfsen_ng\processor;
+namespace arcxonline\nfsen_ng\processor;
 
 /**
  * Provides access to netflow data using a model
