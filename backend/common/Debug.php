@@ -1,6 +1,6 @@
 <?php
 
-namespace mbolli\nfsen_ng\common;
+namespace arcxonline\nfsen_ng\common;
 
 class Debug {
     private readonly float $stopwatch;
