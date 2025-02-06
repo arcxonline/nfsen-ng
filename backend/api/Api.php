@@ -1,9 +1,9 @@
 <?php
 
-namespace mbolli\nfsen_ng\api;
+namespace arcxonline\nfsen_ng\api;
 
-use mbolli\nfsen_ng\common\Config;
-use mbolli\nfsen_ng\common\Debug;
+use arcxonline\nfsen_ng\common\Config;
+use arcxonline\nfsen_ng\common\Debug;
 
 class Api {
     private readonly string $method;
