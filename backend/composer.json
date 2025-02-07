@@ -6,8 +6,7 @@
         "ext-rrd": "*"
     },
     "autoload": {
-        "psr-4": {
-            "arcxonline\\nfsen_ng\\api\\": "src/"
-        }
+    "psr-4": {
+        "arcxonline\\nfsen_ng\\": "backend/"
     }
 }
