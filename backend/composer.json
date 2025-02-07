@@ -1,0 +1,13 @@
+{
+    "name": "arcxonline/nfsen-ng",
+    "description": "NfSen-NG Backend",
+    "require": {
+        "php": ">=7.4",
+        "ext-rrd": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "arcxonline\\nfsen_ng\\api\\": "src/"
+        }
+    }
+}
