@@ -38,7 +38,7 @@ class Import {
         // start progress bar (CLI only)
         $daysTotal = ((int) $dateStart->diff(new \DateTime())->format('%a') + 1) * \count($sources);
         if ($this->cli === true && $this->quiet === false) {
-            echo \PHP_EOL . \mbolli\nfsen_ng\vendor\ProgressBar::start($daysTotal, 'Processing ' . \count($sources) . ' sources...');
+            echo \PHP_EOL . \arcxonline\nfsen_ng\vendor\ProgressBar::start($daysTotal, 'Processing ' . \count($sources) . ' sources...');
         }
 
         // process each source, e.g. gateway, mailserver, etc.
