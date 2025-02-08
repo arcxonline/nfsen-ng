@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mbolli\\nfsen_ng\\": "backend/"
+            "arcxonline\\nfsen_ng\\": "backend/"
         }
     },
     "scripts": {
